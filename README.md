@@ -4,7 +4,7 @@
     - A machine learning model using python which predicts whether a customer will churn (leave the company) or not.
     - **data.py`**: Handles data preprocessing.
     - **`model.py`**: Manages model training.
-    - **`churn-prediction.ipynb`**: EDA(Exploratory Data Analysis), Model selection, Hyperperameter Tuning.
+    - **`churn-prediction.ipynb`**: EDA(Exploratory Data Analysis), Model selection, Hyperparameter Tuning.
 
 
 ## Prerequisites
