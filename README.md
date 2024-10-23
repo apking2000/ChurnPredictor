@@ -26,10 +26,10 @@ Before you begin, ensure you have met the following requirements:
    cd ChurnPredictor
 
 3. **Install Required packages**
-    . Create a virtual environment (optional but recommended):
-        python -m venv venv
-        source venv/bin/activate  # On macOS/Linux
-        .\venv\Scripts\activate   # On Windows
+    .Create a virtual environment (optional but recommended):
+        - python -m venv venv
+        - source venv/bin/activate  # On macOS/Linux
+        - .\venv\Scripts\activate   # On Windows
     . Install the required packages using the requirements file:
         pip install -r requirements.txt
 
