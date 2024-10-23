@@ -2,7 +2,7 @@
 
 ## Description
     - A machine learning model using python which predicts whether a customer will churn (leave the company) or not.
-    - **data.py`**: Handles data preprocessing.
+    - **data.py`**: Handles data preprocessing and extraction.
     - **`model.py`**: Manages model training.
     - **`churn-prediction.ipynb`**: EDA(Exploratory Data Analysis), Model selection, Hyperparameter Tuning.
 
@@ -26,14 +26,14 @@ Before you begin, ensure you have met the following requirements:
    cd ChurnPredictor
 
 3. **Install Required packages**
-    . Create a virtual environment (optional but recommended):
-        python -m venv venv
-        source venv/bin/activate  # On macOS/Linux
-        .\venv\Scripts\activate   # On Windows
-    . Install the required packages using the requirements file:
-        pip install -r requirements.txt
+    - ****Create a virtual environment (optional but recommended)****:
+        - python -m venv venv
+        - source venv/bin/activate  # On macOS/Linux
+        - .\venv\Scripts\activate   # On Windows
+     - ****Install the required packages using the requirements file****:
+        - pip install -r requirements.txt (bash terminal command)
 
 4. **Run the Main Script**
-    . Execute the main script to perform data preprocessing and model training:
-        python main.py
+    - ****Execute the main script to perform data preprocessing and model training****:
+        - python main.py (bash terminal command)
 
