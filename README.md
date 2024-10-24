@@ -70,7 +70,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Running Airflow
 
-1. **Temporary Set up location of dag in my current directory** 
+1. **Temporary Set up location of dag in your current directory** 
     ```bash
     export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
     ```
