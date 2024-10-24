@@ -5,7 +5,7 @@
     - **data.py`**: Handles data preprocessing and extraction.
     - **`model.py`**: Manages model training.
     - **`churn-prediction.ipynb`**: EDA(Exploratory Data Analysis), Model selection, Hyperparameter Tuning.
-    - **'Airflow Pipeline for data processing and model training simultanouesly'
+    - **'Airflow Pipeline for data processing and model training simultanouesly'.
 
 
 ## Prerequisites
