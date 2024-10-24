@@ -33,7 +33,63 @@ Before you begin, ensure you have met the following requirements:
      - ****Install the required packages using the requirements file****:
         - pip install -r requirements.txt (bash terminal command)
 
-4. **Run the Main Script**
-    - ****Execute the main script to perform data preprocessing and model training****:
-        - python main.py (bash terminal command)
+## Airflow Installation
+
+1. **Install Apache Airflow**
+   - If Apache Airflow is already included in your `requirements.txt`, you can skip this step. Otherwise:
+
+     - **Installing Apache Airflow**
+       - Install Apache Airflow with the appropriate version constraints:
+         ```bash
+         pip install "apache-airflow[celery]==2.10.2" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.2/constraints-3.8.txt"
+         ```
+
+---
+
+## Airflow Setup
+
+1. **Initialize the Airflow Database**
+   - Airflow uses a database to manage metadata. Initialize it:
+     ```bash
+     airflow db init
+     ```
+
+2. **Create an Admin User**
+   - To access the Airflow web interface, create an admin user:
+     ```bash
+     airflow users create \
+         --username admin \
+         --password admin_password \
+         --firstname FirstName \
+         --lastname LastName \
+         --role Admin \
+         --email admin@example.com
+     ```
+
+---
+
+## Running Airflow
+
+1. **Temporary Set up location of dag in my current directory** 
+    ```bash
+    export AIRFLOW__CORE__DAGS_FOLDER=$(pwd)/dags
+    ```
+2. **Start the Airflow Web Server**
+   - Start the web server on port 8080 to access the Airflow UI:
+     ```bash
+     airflow webserver --port 8080
+     ```
+
+3. **Start the Airflow Scheduler**
+   - The scheduler is responsible for executing tasks:
+     ```bash
+     airflow scheduler
+     ```
+   - Once the web server is running, access the UI at `http://localhost:8080`.
+
+4. **Trigger the DAG**
+   - Go to the Airflow UI at `http://localhost:8080`.
+   - Locate `run_two_scripts` in the list of DAGs.
+   - Click the "Play" button to trigger the DAG manually.
+
 

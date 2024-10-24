@@ -4,5 +4,4 @@ CONFIG = {
                 'Payment Method_Electronic check', 'Dependents_Yes'],
     'data_path' : 'data.csv',
     'save_model_path': 'model_filename.pkl',
-    
 }
