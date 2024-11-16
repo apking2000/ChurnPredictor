@@ -2,8 +2,8 @@
 
 ## Description
     - A machine learning model using python which predicts whether a customer will churn (leave the company) or not.
-    - **data.py`**: Handles data preprocessing and extraction.
-    - **`model.py`**: Manages model training.
+    - **'dags/data.py`**: Handles data preprocessing and extraction.
+    - **`dags/model.py`**: Manages model training.
     - **`churn-prediction.ipynb`**: EDA(Exploratory Data Analysis), Model selection, Hyperparameter Tuning.
     - **'Airflow Pipeline for data processing and model training simultanouesly'.
 
